@@ -2,7 +2,7 @@
 # @Author: massimo
 # @Date:   2016-03-10 17:09:49
 # @Last Modified by:   massimo
-# @Last Modified time: 2016-03-10 23:29:57
+# @Last Modified time: 2016-03-11 15:54:15
 import numpy as np
 import theano
 import theano.tensor as T
@@ -31,7 +31,7 @@ def softmax(x):
 
 # import the MNIST dataset
 # it has been alredy split into train, validation and test sets
-train_data, valid_data, test_data = load_gz('../data/mnist.pkl.gz')
+train_data, valid_data, test_data = load_gz('../../data/mnist.pkl.gz')
 train_x, train_y = train_data[0], train_data[1].astype(np.int32)
 valid_x, valid_y = valid_data[0], valid_data[1].astype(np.int32)
 test_x, test_y = test_data[0], test_data[1].astype(np.int32)
